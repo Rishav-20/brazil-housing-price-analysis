@@ -28,16 +28,17 @@ The analysis combines two datasets which are cleaned and merged before performin
 | state | Brazilian state |
 | region | Geographic region of Brazil |
 
-The final dataset contains 22,844 property listings
+The final dataset contains **22,844 property listings.**
 
 ---
 
 ## Technologies Used
-Python
-Pandas
-Matplotlib
-Plotly
-Jupyter Notebook
+
+- **Python** — Programming language used for data analysis  
+- **Pandas** — Data cleaning and manipulation  
+- **Matplotlib** — Data visualization  
+- **Plotly** — Interactive geographic visualization  
+- **Jupyter Notebook** — Interactive environment for analysis
 
 ---
 
@@ -61,23 +62,56 @@ Dataset 1 → Data Cleaning → Dataset 2 → Data Cleaning → Merge Datasets �
 
 ---
 
-## Key Insights
-* Housing prices vary significantly across Brazilian regions
-* The Southeast region shows the highest average housing prices
-* Property size has a moderate positive relationship with housing price
-* Geographic location appears to influence housing prices more strongly than property size
+## Key Findings
 
+- Housing prices vary significantly across Brazilian regions
+- The Southeast region has the highest average housing prices
+- Property size has a moderate positive relationship with housing price
+- Geographic location plays a stronger role in determining property value
+
+---
+
+## Key Visualizations
+
+### Mean Housing Price by Region
+<img src="images/mean_price_by_region.png" width="700">
+Insight: 
+The Southeast region has the highest average housing prices, indicating stronger demand and economic activity compared to other regions.
+
+### Distribution of Housing Prices
+<img src="images/price_distribution.png" width="700">
+Insight:
+Housing prices are right-skewed, meaning most properties fall in the lower to mid-price range, with fewer high-priced listings.
+
+### Price vs Property Size
+<img src="images/price_vs_property_size.png" width="700">
+Insight:  
+There is a moderate positive relationship between property size and price, although variation suggests location also influences housing values.
+
+### Distribution of Property Sizes
+<img src="images/property_size_distribution.png" width="700">
+Insight:
+There is a moderate positive relationship between property size and price, but price variation suggests that location also influences property values.
+
+### Property Size Distribution
+<img src="images/Property_Size_Boxplot.png" width="700">
+Insight:
+Most properties fall within a moderate size range, with a few larger properties appearing as outliers.
 ---
 
 ## Repository Structure
 ```
-brazil-housing-price-analysis/
+brazil-housing-price-analysis
 │
-├── data/
+├── data
 │   ├── brasil-real-estate-1.csv
 │   └── brasil-real-estate-2.csv
-│
-├── notebooks/
+├── images
+│   ├── Mean_Price_by_Region_Chart.png
+│   ├── Price_Distribution.png
+│   ├── Price_vs_Property_Size.png
+│   └── Property_Size_Boxplot.png
+├── notebooks
 │   └── housing_pricing_in_brazil.ipynb
 │
 ├── requirements.txt
@@ -93,7 +127,7 @@ brazil-housing-price-analysis/
 
 ## Future Improvements
 
-* Building a machine learning model for price predictio
+* Building a machine learning model for price prediction
 * Adding interactive dashboards
 * Incorporating additional housing features such as property type or amenities
 
